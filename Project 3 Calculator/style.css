@@ -1,0 +1,43 @@
+table{
+    width: 30%;
+    border: 1px solid ;
+    text-align: center;
+    margin: 5px 5px;
+}
+td button{
+    /* border: 1px solid black; */
+    padding: 10px;  
+    margin: 2px;
+    overflow: hidden;
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+input{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    padding: 1px 0px;
+    margin: 0px;
+}
+.number{
+    background-color: #f9f9f9;
+}
+.AC button{
+    background-color: #eb565c;
+    color: white;
+}
+.equal button{
+    background-color: #2d83be;
+    color: white;
+    line-height: 160px;
+
+}
+
+.operator{
+    background-color: whitesmoke;
+    color: lightseagreen;
+}
