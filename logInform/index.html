@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Form By Sheikh Umar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -17,21 +17,21 @@
                     <h1>Registration Form</h1>
                 </div>
                 <div class="">
-                    <form id="form">
+                    <form >
                         <div class="form-group">
                             <label for="uid"><span class="text-danger">*</span><b>User Id:</b></label>
-                            <input type="text" name="uid" class="form-control" id="uid" onfocusout="valid('uid')">
+                            <input type="text" name="uid" class="form-control" id="uid" onFocusOut="validuid()">
                             <span id="euid" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="Password"><span class="text-danger">*</span><b>Password:</b></label>
-                            <input type="password" class="form-control" id="pass" onfocusout="valid('pass')">
+                            <input type="password" class="form-control" id="pass" onFocusOut="validpass()">
                             <span id="epass" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="name"><span class="text-danger">*</span><b>Name:</b></label>
-                            <input type="text" class="form-control" id="name" onkeyup="valid('name')"
-                                onfocusout="valid('name')">
+                            <input type="text" class="form-control" id="name" onKeyUp="validname()"
+                                onFocusOut="validname()">
                             <span id="ename" class="text-danger"></span>
                         </div>
                         <div class="form-group">
@@ -300,39 +300,40 @@
                         </div>
                         <div class="form-group">
                             <label for="zip"><span class="text-danger">*</span><b>Zip Code:</b> </label>
-                            <input type="text" class="form-control" id="zip" onkeyup="valid('zip')">
+                            <input type="text" class="form-control" id="zip" onKeyUp="validzip()">
                             <span id="ezip" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="email"><span class="text-danger">*</span><b>Email:</b> </label>
-                            <input type="email" class="form-control" id="email" onkeyup="valid('email')">
+                            <input type="email" class="form-control" id="email" onKeyUp="validemail()">
                             <span class="text-danger" id="eemail"></span>
                         </div>
                         <div class="form-group">
-                            <label for="sex"><span class="text-danger">*</span><b>Sex:</b> </label>
+                            <label for="male"><span class="text-danger">*</span><b>Sex:</b> </label>
                             <div><label for="male"><input type="radio" name="sex" id="male"
-                                        onchange="valid('sex')">Male</label>
+                                        onClick="validsex()">Male</label>
                                 <label for="female"><input type="radio" name="sex" id="female"
-                                        onchange="valid('sex')">Female</label>
-                                <span id="esex"></span>
+                                        onClick="validsex()">Female</label>
+                                        <br>
+                                <span class="text-danger" id="esex"></span>
                             </div>
 
                         </div>
                         <div class="form-group">
                             <label for="language"><span class="text-danger">*</span><b>Language:</b> </label>
                             <div><label for="english"><input type="checkbox" name="language" id="lan"
-                                        onchange="valid('lan')">English</label>
-                                <label for="nonenglish"><input type="checkbox" name="language" id="lan2"
-                                        onchange="valid('lan')">Non-English</label>
+                                        checked>English</label>
+                                <label for="nonenglish"><input type="checkbox" name="language"
+                                        id="lan2">Non-English</label>
                             </div>
                             <span id="elan" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <p> <label for="about"><b>Message   :</b> </label></p>
+                            <p> <label for="about"><b>Message :</b> </label></p>
                             <label for="about"><textarea name="about" id="about" cols="25" rows="5"
                                     class="form-control"></textarea></label>
                         </div>
-                        <input type="submit" class="btn btn-primary" value="submit" />
+                        <input type="button" class="btn btn-primary" value="submit" onClick="validall()"/>
                     </form>
                 </div>
                 <br><br>
@@ -349,7 +350,6 @@
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <!-- <script src="script.js"></script> -->
 
 </body>
 
